@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carte Professionnelle</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#ececec;
+display:flex;
+justify-content:center;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+}
+
+.header{
+background:linear-gradient(180deg,#86d7c6,#5f80f7);
+padding:50px 25px 80px;
+border-radius:0 0 20px 20px;
+text-align:center;
+position:relative;
+}
+
+.logo{
+width:130px;
+height:130px;
+border-radius:50%;
+background:white;
+object-fit:contain;
+padding:10px;
+margin-bottom:25px;
+}
+
+.name{
+color:white;
+font-size:34px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.job{
+color:white;
+font-size:18px;
+line-height:1.6;
+font-weight:300;
+}
+
+/* FLOATING ICONS */
+
+.floating-icons{
+position:absolute;
+bottom:-35px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:18px;
+}
+
+.icon-btn{
+width:70px;
+height:70px;
+border-radius:50%;
+border:none;
+background:white;
+font-size:28px;
+box-shadow:0 6px 20px rgba(0,0,0,0.12);
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+}
+
+/* INFO CARD */
+
+.card{
+margin-top:60px;
+background:white;
+border-radius:20px;
+padding:25px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.info{
+display:flex;
+gap:15px;
+padding:22px 0;
+border-bottom:1px solid #efefef;
+}
+
+.info:last-child{
+border-bottom:none;
+}
+
+.info-icon{
+width:50px;
+height:50px;
+border-radius:50%;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+flex-shrink:0;
+}
+
+.label{
+color:#9b9b9b;
+font-size:15px;
+margin-bottom:5px;
+}
+
+.text{
+color:#111;
+font-size:20px;
+line-height:1.5;
+font-weight:500;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:15px;
+background:#eef2ff;
+color:#5f80f7;
+text-decoration:none;
+padding:10px 18px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* CONTACT BUTTON */
+
+.contact-btn{
+margin-top:25px;
+background:#5f80f7;
+color:white;
+text-decoration:none;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+padding:20px;
+border-radius:15px;
+font-size:22px;
+font-weight:500;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<img src="Villepinte.jpeg" class="logo">
+
+<div class="name">
+Sophie DELBART
+</div>
+
+<div class="job">
+Conseillère Municipale déléguée<br>
+à l'Emploi et à l'Insertion
+</div>
+
+<!-- BOUTONS -->
+
+<div class="floating-icons">
+
+<!-- APPEL -->
+
+<a href="tel:0627386772" class="icon-btn">
+📞
+</a>
+
+<!-- EMAIL -->
+
+<a href="mailto:sdelbart@ville-villepinte.fr"
+class="icon-btn">
+✉️
+</a>
+
+<!-- GPS -->
+
+<a href="https://maps.google.com/?q=Place+de+l'Hôtel+de+ville+Villepinte"
+target="_blank"
+class="icon-btn">
+📍
+</a>
+
+</div>
+
+</div>
+
+<!-- CARTE -->
+
+<div class="card">
+
+<div class="info">
+
+<div class="info-icon">📞</div>
+
+<div>
+<div class="label">Téléphone</div>
+<div class="text">0627386772</div>
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="info-icon">✉️</div>
+
+<div>
+<div class="label">Adresse e-mail</div>
+<div class="text">
+sdelbart@ville-villepinte.fr
+</div>
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="info-icon">📍</div>
+
+<div>
+
+<div class="label">Lieu</div>
+
+<div class="text">
+Place de l'Hôtel de ville,
+Villepinte, IDF, 93420,
+France
+</div>
+
+<a href="https://maps.google.com/?q=Place+de+l'Hôtel+de+ville+Villepinte"
+target="_blank"
+class="map-btn">
+Afficher sur la carte
+</a>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="info-icon">💼</div>
+
+<div>
+
+<div class="label">
+Mairie de Villepinte
+</div>
+
+<div class="text">
+Conseillère Municipale déléguée à l'Emploi et à l'Insertion
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- AJOUT CONTACT -->
+
+<a href="contact.vcf"
+download
+class="contact-btn">
+
+👤 Ajouter contact
+
+</a>
+
+</div>
+
+</body>
+</html>
